@@ -4,17 +4,21 @@
 
  - 
 
-[Remix](https://remix.ethereum.org/) - great workbench for creating solidity contracts - deploys to local mock networks.
+[Remix](https://remix.ethereum.org/) - great workbench for creating solidity contracts - deploys to both local mock networks & the real deal networks.
 
 [Rinkeby-faucet](rinkeby-faucet.com) - socialist / communist source for free Ether (for testing only)
 
 [Ether Converter](https://etherconverter.online/) - converts Wei / Finney / Ether / etc
 
-[Mnemonic Code Converter](https://iancoleman.io/bip39/) - full status of all accounts linked to a single mnemonic code
+[Mnemonic Code Converter](https://iancoleman.io/bip39/) - full status of all accounts linked to a single mnemonic code - check your exchanges here! Public exchange news board.
 
-[Infura.io](https://infura.io/) - Rinkeby provider API
+## WEB3 Providers
 
-[Rinkeby.Etherscan](https://rinkeby.etherscan.io/) - Rinkeby tool to examine contracts on Rinkeby network
+[ganache-cli](https://github.com/trufflesuite/ganache-cli/) - Test Provider for mock Ethereum accounts + networks for testing.
+
+[Infura.io](https://infura.io/) - Rinkeby provider API - connects JS apps with Rinkeby network by connecting as a provider to Web3.
+
+[Rinkeby.Etherscan](https://rinkeby.etherscan.io/) - Rinkeby tool to examine contracts on ALL real deal Ethereum networks.
 
 
 

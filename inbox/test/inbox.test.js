@@ -1,11 +1,12 @@
 const assert = require('assert');
 const ganache = require('ganache-cli');
-const Web3 = require('web3');   //CONSTRUCTOR OF WEB3 - INSTANCE OF GREATER WEB3
-const provider = ganache.provider();
+const Web3 = require('web3');   //JS PORTAL TO ETHEREUM WORLD
+const provider = ganache.provider();  // Mock Ethereum Network for testing - instantaneous
 const web3 = new Web3(provider);
 
+// INTERFACE (ABI) = Translation Layer Ethereum Network <-> Javascript
+// BYTECODE = compiled contract
 const { interface, bytecode } = require('../compile');
-
 
 let accounts;
 let inbox;
@@ -31,6 +32,7 @@ describe('Inbox', () => {
 		assert.ok(inbox.options.address);
 	});
 
+	// ALL ASYNC (Etherum networking can take up to 1 minute!)
 	it('has a default message', async () => {
 		const message = await inbox.methods.message().call();
         assert.equal(message, 'Lol?');
